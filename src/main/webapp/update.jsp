@@ -1,6 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@page import="java.sql.*"  %>
-
 <%
     if(request.getParameter("submit") != null){
         final String UPDATE_SQL = "UPDATE studd SET sname=?, course=?, fee=? WHERE id =?;";
@@ -37,9 +36,9 @@
 <html>
 <head>
     <title>JSP - Hello World</title>
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
+    <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/base.css" type="text/css">
 </head>
 <body>
     <h1>Student Update</h1>
@@ -87,11 +86,11 @@
                     }
             %>
 
-                <div alight="right">
+                <div class="d-flex justify-content-start">
                     <input type="submit" id="submit" name="submit" value="submit" class="btn btn-info">
                     <input type="reset" id="reset" name="reset" value="reset" class="btn btn-warning">
                 </div>
-                <div alight="right">
+                <div class="d-flex justify-content-start">
                     <p><a href="index.jsp">Click Back</a></p>
                 </div>
             </form>

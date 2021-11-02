@@ -34,8 +34,9 @@
 <html>
 <head>
     <title>JSP - Hello World</title>
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/base.css" type="text/css">
 </head>
 <body>
 <h1>Student Registration system Crud using-JSP</h1>
@@ -96,7 +97,6 @@
                             String name = resultSet.getString("sname");
                             String course = resultSet.getString("course");
                             String fee = resultSet.getString("fee");
-                            System.out.println(id + ": " + name +" / " + course + " (" + fee + ")");
                         %>
                         <tr>
                             <td><%=name%></td>
